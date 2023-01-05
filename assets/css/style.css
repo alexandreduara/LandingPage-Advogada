@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+}
+
+body{
+    background: #08172E;
+}
+
+.navbar{
+    position: absolute;
+    width: 0px;
+    margin: 0 0 0 30vw;
+    height: 0px;
+    display: inline-flex;
+    flex-direction: column;
+    background-color: #13243dfd;
+    overflow:hidden;
+    transition: .25s;
+}
+
+.navbar--2{
+    position: sticky;
+    width: 100vw;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    background-color: #13243dfd;
+    transition: .25s;
+    
+}
+
+.navbar__menu{
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 1em 3em 1em 3em;
+    align-content: center;
+}
+
+.navbar--active{
+    width: 70vw;
+    height: 100vh;
+    overflow: visible;
+    transition: .25s;
+}
+
+.navbar__logo{
+    height: 4em;
+    align-self: center;
+}
+
+.navbar__button--menu, .navbar__button--menu--image{
+    align-self: center;
+}
+
+.navbar__title{
+    position: absolute;
+    bottom: 100px;
+    right: 30px;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    margin: 1em auto 1em auto;
+}
+
+.navbar__title, .navbar button{
+    color: #AE8330;
+}
+
+.navbar__button{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navbar button{
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    font-size: 1.5em;
+    padding: 1em 0.5em 1em 1.5em;
+    text-transform: uppercase;
+}
+
+.navbar button:hover{
+    color: wheat;
+}
+
+.navbar__logo--2{
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar__button--menu--2{
+    background: transparent;
+    border: 0px;
+    width: 3em;
+}
+
+.navbar__menu--2{
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 1em 3em 0em 3em;
+    align-content: center;
+    padding: 0 0 1em 0;
+}
+
+.navbar--off{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    transition: .25s;
+}
+
+main .imagem__principal{
+    width: 20em;
+    display: flex;
+    margin: 2em auto 0px auto;
+}
+
+main .titulo__principal{
+    text-align: center;
+    color: #AE8330;
+    line-height: 0px;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+main .texto__principal{
+    padding: 1em;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+}
+
+main .button__contato{
+    display: inline-flex;
+    text-align: center;
+    width: 70vw;
+    height: 2em;
+    border-radius: 3em;
+    display: block;
+    margin: 1em auto 3em auto;
+    background-color: #80AF52;
+    font-size: 1.6em;
+    font-weight: 700;
+    cursor: pointer;
+    color: #181818;
+    padding: 10px 0px 0px 0px;
+}
+
+main .icone__whatsapp{
+    width: 1em;
+    margin: 5px 3vw 0 0;
+}
