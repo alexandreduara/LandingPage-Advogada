@@ -115,13 +115,13 @@ body{
     transition: .25s;
 }
 
-main .imagem__principal{
+header .imagem__principal{
     width: 20em;
     display: flex;
     margin: 2em auto 0px auto;
 }
 
-main .titulo__principal{
+header .titulo__principal{
     text-align: center;
     color: #AE8330;
     line-height: 0px;
@@ -129,14 +129,14 @@ main .titulo__principal{
     font-size: 2em;
 }
 
-main .texto__principal{
+ .texto__principal{
     padding: 1em;
     font-size: 1.5em;
     text-align: center;
     color: white;
 }
 
-main .button__contato{
+.button__contato{
     display: inline-flex;
     text-align: center;
     width: 70vw;
@@ -152,7 +152,18 @@ main .button__contato{
     padding: 10px 0px 0px 0px;
 }
 
-main .icone__whatsapp{
+.icone__whatsapp{
     width: 1em;
     margin: 5px 3vw 0 0;
+}
+
+main .imagem__notebook{
+    width: 80%;
+    display: block;
+    margin: 0px auto 0px auto;
+}
+
+main .button__contato{
+    background-color: #d44c3dd2;
+    color: white;
 }
