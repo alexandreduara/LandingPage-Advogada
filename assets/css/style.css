@@ -13,6 +13,7 @@ body{
 
 .navbar{
     position: absolute;
+    top: 0px;
     width: 0px;
     margin: 0 0 0 30vw;
     height: 0px;
@@ -24,9 +25,9 @@ body{
 }
 
 .navbar--2{
-    position: sticky;
+    position: fixed;
+    top: 0px;
     width: 100vw;
-    height: 100%;
     display: inline-flex;
     flex-direction: column;
     background-color: #13243dfd;
@@ -55,6 +56,8 @@ body{
 
 .navbar__button--menu, .navbar__button--menu--image{
     align-self: center;
+    background-color: transparent;
+    border: none;
 }
 
 .navbar__title{
@@ -64,9 +67,6 @@ body{
     font-size: 1.5em;
     text-transform: capitalize;
     margin: 1em auto 1em auto;
-}
-
-.navbar__title, .navbar button{
     color: #AE8330;
 }
 
@@ -76,7 +76,8 @@ body{
     align-items: flex-start;
 }
 
-.navbar button{
+.navbar__button button{
+    color: #AE8330;
     cursor: pointer;
     border: 0;
     background-color: transparent;
@@ -85,7 +86,7 @@ body{
     text-transform: uppercase;
 }
 
-.navbar button:hover{
+.navbar__button button:hover{
     color: wheat;
 }
 
@@ -118,7 +119,7 @@ body{
 header .imagem__principal{
     width: 20em;
     display: flex;
-    margin: 2em auto 0px auto;
+    margin: 10em auto 0px auto;
 }
 
 header .titulo__principal{
@@ -166,4 +167,70 @@ main .imagem__notebook{
 main .button__contato{
     background-color: #d44c3dd2;
     color: white;
+}
+
+.navbar__title--desktop{
+    display: none;
+}
+
+.navbar__button--2{
+    display: none;
+}
+
+@media screen and (min-width: 1000px) {
+    .navbar__menu--2{
+        height: 4em;
+    }
+
+    .navbar__menu--identificacao{
+        display: inline-flex;
+    }
+    .navbar__button--menu--2{
+        display: none;
+    }
+    .navbar__title--desktop{
+        display: inline-flex;
+        font-size: 1.5em;
+        text-transform: capitalize;
+        margin: 1em 1em 1em 1em;
+        color: #AE8330;
+    }
+    .navbar__button{
+        flex-direction: row;
+    }
+    .navbar__button--2{
+        display: inline-flex;
+    }
+    
+
+    header{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .textos__principais{
+        margin: 100px 0px 0px 0px;
+        width: 700px;
+    }
+
+    .button__contato{
+        width: 70%;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "texto" ,"imagem";
+    }
+
+    .imagem__notebook{
+        display: block;
+        grid-area: imagem;
+    }
+
+    main .texto__principal{
+        display: inline-flex;
+        margin-top: 400px;
+    }
+
 }
