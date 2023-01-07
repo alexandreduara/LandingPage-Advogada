@@ -220,7 +220,6 @@ main .button__contato{
     main{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "texto" ,"imagem";
     }
 
     .imagem__notebook{
